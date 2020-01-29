@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VendorFactory.java</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+  <link rel='stylesheet' type='text/css' href='../../../../coverage.css'/>
+  <link rel='shortcut icon' type='image/png' href='../../../../logo.png'/>
+  <script type='text/javascript' src='../../../../coverage.js'></script>
+  <script type='text/javascript' src='../../../../prettify.js'></script>
+</head>
+<body onload='prettyPrint()'>
+  <table cellpadding='0' cellspacing='1'>
+    <caption>canteenmanagement\src\main\java\com\hexaware\MLP173\factory\VendorFactory.java</caption>
+    <tr>
+      <td class='line'>1</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>package com.hexaware.MLP173.factory;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td><pre class='imports prettyprint' onclick='showHideLines(this)'><div>import com.hexaware.MLP173.persistence.VendorDAO;
+import com.hexaware.MLP173.persistence.DbConnection;
+import java.util.List;
+import com.hexaware.MLP173.model.Vendor;</div><span>import ...</span></pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/**
+ * VendorFactory class used to fetch Vendor data from database.
+ * @author hexware
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>10</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>public class VendorFactory {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>  /**
+   *  Protected constructor.
+   */</div><span>  /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>14</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l14s0'>  protected VendorFactory() {</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testConstructor: 29</li>
+        </ol>
+      </td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>16</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l16s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testConstructor: 29</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>  /**
+   * Call the data base connection.
+   * @return the connection object.
+   */</div><span>  /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>21</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public static VendorDAO dao() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>22</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l22s0'>    DbConnection db = new DbConnection();</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testConstructor: 30</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>23</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l23s0'>    return db.getConnect().onDemand(VendorDAO.class);</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testConstructor: 30</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>24</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>  /**
+   * Call the data base connection.
+   * @return the array of Vendor object.
+   */</div><span>  /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>29</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public static Vendor[] showVendor() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>30</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l30s0'>    List&lt;Vendor> vendor = dao().show();</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testListAllSome: 74</li>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testListAllEmpty: 49</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>31</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l31s0'>    return vendor.toArray(new Vendor[vendor.size()]);</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testListAllSome: 74</li>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testListAllEmpty: 49</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>32</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>  /**
+    * retrive vendor info.
+    * @return array of menu objects.
+    * @param vendorName to accept customer name.
+    */</div><span>  /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>38</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public static Vendor findByVendorName(final String vendorName) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>39</td><td class='count'>3</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l39s0'>    Vendor vendor = dao().findByVendorName(vendorName);</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testfindByVendorId: 110, 112, 114</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>40</td><td class='count'>3</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l40s0'>    return vendor;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testfindByVendorId: 110, 112, 114</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>41</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>      /**
+       * call authenticate method for validate user.
+       * @return the count.
+       * @param user to initilize customer user.
+       * @param password to initilize cust password
+       */</div><span>      /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>48</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public static int validateVendor(final String user, final String password) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>49</td><td class='count'>6</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l49s0'>    int count = dao().authenticate(user, password);</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testAuthenticate: 137, 138, 139</li>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testValidateVendor: 160, 161, 162</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>50</td><td class='count'>6</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l50s0'>    return count;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testAuthenticate: 137, 138, 139</li>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testValidateVendor: 160, 161, 162</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>51</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>52</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>}</pre></td>
+    </tr>
+  </table>
+</body>
+</html>
