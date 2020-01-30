@@ -30,6 +30,15 @@ public class OrderFactory {
   /**
    * Call the data base connection.
    * @return the array of menu object.
+   * @param menuId to accept menu id.
+   */
+  public static Menu showMenuItem(final int menuId) {
+    Menu orderDetail = dao().findByMenuId(menuId);
+    return orderDetail;
+  }
+  /**
+   * Call the data base connection.
+   * @return the array of menu object.
    */
   public static OrderDetail[] showOrderDetail() {
     List<OrderDetail> orderDetail = dao().show();
@@ -164,14 +173,21 @@ public class OrderFactory {
       return "Order Cannot placed yesterday...";
     } else {
       double diff = walAmount - totalAmount;
-      System.out.println("Price is  " + menu.getFoodPrice());
+      System.out.println("Price is  " + totalAmount);
       orderdetail.setOrdStatus(OrderStatus.PENDING);
       orderdetail.setOrdAmount(totalAmount);
       dao().placeOrder(orderdetail);
       dao().updateBalance(diff, orderdetail.getWalType(), orderdetail.getCusId());
+      if (totalAmount >= 500 && totalAmount <= 600) {
+        System.out.println("You are getting a complement");
+        Menu compl = OrderFactory.showMenuItem(7);
+        System.out.println(compl.getFoodName());
+      } else if (totalAmount >= 600 && totalAmount <= 700) {
+        System.out.println("You are getting a complement");
+        Menu compl = OrderFactory.showMenuItem(8);
+        System.out.println(compl.getFoodName());
+      }
       return "Order Placed Successfully...";
     }
   }
 }
-
-
