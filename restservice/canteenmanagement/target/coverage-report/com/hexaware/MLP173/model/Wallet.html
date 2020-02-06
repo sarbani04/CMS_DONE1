@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wallet.java</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+  <link rel='stylesheet' type='text/css' href='../../../../coverage.css'/>
+  <link rel='shortcut icon' type='image/png' href='../../../../logo.png'/>
+  <script type='text/javascript' src='../../../../coverage.js'></script>
+  <script type='text/javascript' src='../../../../prettify.js'></script>
+</head>
+<body onload='prettyPrint()'>
+  <table cellpadding='0' cellspacing='1'>
+    <caption>canteenmanagement\src\main\java\com\hexaware\MLP173\model\Wallet.java</caption>
+    <tr>
+      <td class='line'>1</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>package com.hexaware.MLP173.model;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td><pre class='imports prettyprint' onclick='showHideLines(this)'><div>import java.util.Objects;</div><span>import ...</span></pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/**
+ * Wallet class used to display Wallet information.
+ * @author hexware
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>7</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>public class Wallet {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/**
+ * walid  to store WalletId.
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>11</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private int <span class='instance covered' title='Reads: 8 Writes: 12'>cusId</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+ * walid  to store WalletId.
+ */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>15</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private int <span class='instance covered' title='Reads: 6 Writes: 12'>walId</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>  /**
+ * walamount to store Wallet amount.
+ */</div><span>  /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>19</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private int <span class='instance covered' title='Reads: 10 Writes: 12'>walAmount</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/**
+ * waltype to store Wallet Type.
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>23</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private WalType <span class='instance covered' title='Reads: 4 Writes: 12'>walType</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div> /**
+   * Default Constructor.
+   */</div><span> /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>27</td><td class='count'>3</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l27s0'>  public Wallet() {</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testEquals: 47, 53</li>
+          <li>com.hexaware.MLP173.model.WalletTest#testWallet: 65</li>
+        </ol>
+      </td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>29</td><td class='count'>3</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l29s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testEquals: 47, 53</li>
+          <li>com.hexaware.MLP173.model.WalletTest#testWallet: 65</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/**
+ * @param argCusId to initialize WalletId.
+ * @param argWalId to initialize WalletId.
+ * @param argWalAmount to initialize Walletamount.
+ * @param argWalType to initialize Wallet type.
+ * used to get details through constructor.
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>37</td><td class='count'>11</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l37s0'>  public Wallet(final int argCusId, final int argWalId, final int argWalAmount, final WalType argWalType) {</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 198, 199, 200, 201</li>
+          <li>com.hexaware.MLP173.factory.WalletFactoryTest#testwalletId: 69, 70, 71, 72</li>
+          <li>com.hexaware.MLP173.model.WalletTest#testEquals: 49, 50</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>38</td><td class='count'>11</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l38s0'>    this.cusId = argCusId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 198, 199, 200, 201</li>
+          <li>com.hexaware.MLP173.factory.WalletFactoryTest#testwalletId: 69, 70, 71, 72</li>
+          <li>com.hexaware.MLP173.model.WalletTest#testEquals: 49, 50</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>39</td><td class='count'>11</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l39s0'>    this.walId = argWalId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 198, 199, 200, 201</li>
+          <li>com.hexaware.MLP173.factory.WalletFactoryTest#testwalletId: 69, 70, 71, 72</li>
+          <li>com.hexaware.MLP173.model.WalletTest#testEquals: 49, 50</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>40</td><td class='count'>11</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l40s0'>    this.walAmount = argWalAmount;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 198, 199, 200, 201</li>
+          <li>com.hexaware.MLP173.factory.WalletFactoryTest#testwalletId: 69, 70, 71, 72</li>
+          <li>com.hexaware.MLP173.model.WalletTest#testEquals: 49, 50</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>41</td><td class='count'>11</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l41s0'>    this.walType = argWalType;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 198, 199, 200, 201</li>
+          <li>com.hexaware.MLP173.factory.WalletFactoryTest#testwalletId: 69, 70, 71, 72</li>
+          <li>com.hexaware.MLP173.model.WalletTest#testEquals: 49, 50</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>42</td><td class='count'>11</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l42s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 198, 199, 200, 201</li>
+          <li>com.hexaware.MLP173.factory.WalletFactoryTest#testwalletId: 69, 70, 71, 72</li>
+          <li>com.hexaware.MLP173.model.WalletTest#testEquals: 49, 50</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>43</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>44</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public final boolean equals(final Object obj) {</pre></td>
+    </tr>
+    <tr>
+      <td></td><td class='count'>5</td>
+      <td class='paths'>
+        <span style='cursor:default; background-color:#6d9200' onclick='hidePath()'>Path coverage: 4/7</span>
+        <span class='covered' onclick="showPath(this,'l45s0 l46s0')">A: 1</span>
+        <span class='covered' onclick="showPath(this,'l45s0 l48s0 l49s0')">B: 1</span>
+        <span class='covered' onclick="showPath(this,'l45s0 l48s0 l51s0 l52s0 l52s1 l53s0 l53s1 l54s0 l54s1 l55s0 l56s0')">C: 1</span>
+        <span class='covered' onclick="showPath(this,'l45s0 l48s0 l51s0 l52s0 l58s0')">D: 2</span>
+        <span class='uncovered' onclick="showPath(this,'l45s0 l48s0 l51s0 l52s0 l52s1 l53s0 l58s0')">E: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l45s0 l48s0 l51s0 l52s0 l52s1 l53s0 l53s1 l54s0 l58s0')">F: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l45s0 l48s0 l51s0 l52s0 l52s1 l53s0 l53s1 l54s0 l54s1 l55s0 l58s0')">G: 0</span>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>45</td><td class='count'>5</td>
+      <td><pre class='prettyprint jmp'>    <span id='l45s0' title='Executions: 5' class='covered cp' onclick='showHide(this,0)'>if (obj == null)</span> {</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testEquals: 51, 52, 54, 55, 57</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>46</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l46s0'>      return false;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testEquals: 52</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>47</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>48</td><td class='count'>4</td>
+      <td><pre class='prettyprint jmp'>    <span id='l48s0' title='Executions: 4' class='covered cp' onclick='showHide(this,0)'>if (getClass() != obj.getClass())</span> {</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testEquals: 51, 54, 55, 57</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>49</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l49s0'>      return false;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testEquals: 57</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>50</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>51</td><td class='count'>3</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l51s0'>    Wallet wallet = (Wallet) obj;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testEquals: 51, 54, 55</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>52</td><td class='count'>3</td>
+      <td><pre class='prettyprint jmp'>    <span id='l52s0' title='Executions: 3' class='covered cp' onclick='showHide(this,0)'>if (Objects.equals(cusId, wallet.cusId)</span></pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testEquals: 51, 54, 55</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>53</td><td class='count'>1</td>
+      <td><pre class='prettyprint jmp'>        && <span id='l53s0' title='Executions: 1' class='covered cp' onclick='showHide(this,0)'>Objects.equals(walId, wallet.walId)</span></pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testEquals: 51</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>54</td><td class='count'>1</td>
+      <td><pre class='prettyprint jmp'>        && <span id='l54s0' title='Executions: 1' class='covered cp' onclick='showHide(this,0)'>Objects.equals(walAmount, wallet.walAmount)</span></pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testEquals: 51</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>55</td><td class='count'>1</td>
+      <td><pre class='prettyprint jmp'>        && <span id='l55s0' title='Executions: 1' class='covered cp' onclick='showHide(this,0)'>Objects.equals(walType, wallet.walType)) {</span></pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testEquals: 51</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>56</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l56s0'>      return true;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testEquals: 51</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>57</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>58</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l58s0'>    return false;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testEquals: 54, 55</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>59</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>60</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>61</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public final int hashCode() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>62</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l62s0'>    return Objects.hash(walId);</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testEquals: 58x2</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>63</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>  /**
+     * @return this Wallet ID.
+     */</div><span>  /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>67</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final int getCusId() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>68</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l68s0'>    return cusId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testWallet: 68, 78</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>69</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>        /**
+         * @param argCusId gets the wallet id.
+         */</div><span>        /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>73</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setCusId(final int argCusId) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>74</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l74s0'>    this.cusId = argCusId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testWallet: 73</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>75</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l75s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testWallet: 73</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+     * @return this Wallet ID.
+     */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>79</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final int getWalId() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>80</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l80s0'>    return walId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testWallet: 69, 79</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>81</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+     * @param argWalId gets the wallet id.
+     */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>85</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setWalId(final int argWalId) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>86</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l86s0'>    this.walId = argWalId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testWallet: 74</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>87</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l87s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testWallet: 74</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>      /**
+     * @return this food ID.
+     */</div><span>      /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>91</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final WalType getWalType() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>92</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l92s0'>    return walType;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testWallet: 71, 81</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>93</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>      /**
+       * @param argWalType gets the type of wallet.
+       */</div><span>      /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>97</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setWalType(final WalType argWalType) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>98</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l98s0'>    this.walType = argWalType;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testWallet: 76</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>99</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l99s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testWallet: 76</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>        /**
+     * @return this food ID.
+     */</div><span>        /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>103</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final int getWalAmount() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>104</td><td class='count'>8</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l104s0'>    return walAmount;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 252x2, 254x2, 256x2</li>
+          <li>com.hexaware.MLP173.model.WalletTest#testWallet: 70, 80</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>105</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>          /**
+           * @param argWalAmount gets the type of wallet.
+           */</div><span>          /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>109</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setWalAmount(final int argWalAmount) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>110</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l110s0'>    this.walAmount = argWalAmount;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testWallet: 75</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>111</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l111s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.WalletTest#testWallet: 75</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>112</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>113</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final String toString() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>114</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l114s0'>    return String.format("%-15s %-15s %-15s %-15s", cusId, walId, walAmount, walType);</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>115</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>116</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>}</pre></td>
+    </tr>
+  </table>
+</body>
+</html>

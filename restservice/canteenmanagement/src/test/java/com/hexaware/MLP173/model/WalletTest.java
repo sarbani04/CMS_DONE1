@@ -81,54 +81,57 @@ public class WalletTest {
     assertEquals(WalType.CREDITCARD, w.getWalType());
   }
 }
-
-  // /**
-  //  * tests that empty Wallet list is handled correctly.
-  //  * @param dao mocking the dao class
-  //  */
-  // @Test
-  // public final void testListAllEmpty(@Mocked final WalletDAO dao) {
-  //   new Expectations() {
-  //     {
-  //       dao.show(); result = new ArrayList<Wallet>();
-  //     }
-  //   };
-  //   new MockUp<WalletFactory>() {
-  //     @Mock
-  //     WalletDAO dao() {
-  //       return dao;
-  //     }
-  //   };
-  //   Wallet[] me = WalletFactory.showWallet();
-  //   assertEquals(0, me.length);
-  // }
-  // /**
-  //  * Tests that a list with some employees is handled correctly.
-  //  * @param dao mocking the dao class
-  //  */
-  // @Test
-  // public final void testListAllSome(@Mocked final WalletDAO dao) {
-  //   final Wallet m100 = new Wallet(1, 1, 145, WalType.CREDITCARD);
-  //   final Wallet m101 = new Wallet(1, 1, 145, WalType.CREDITCARD);
-  //   final ArrayList<Wallet> mn = new ArrayList<Wallet>();
-  //   new Expectations() {
-  //     {
-  //       mn.add(m100);
-  //       mn.add(m101);
-  //       dao.show();
-  //       result = mn;
-  //     }
-  //   };
-  //   new MockUp<WalletFactory>() {
-  //     @Mock
-  //     WalletDAO dao() {
-  //       return dao;
-  //     }
-  //   };
-  //   Wallet[] mn1 = WalletFactory.showWallet();
-  //   assertEquals(2, mn1.length);
-  //   assertEquals(1, mn1[0].getCusId());
-  //   assertEquals(1, mn1[1].getVenId());
-  //   assertEquals(145, mn1[1].getWalAmount());
-  //   assertEquals(WalType.CREDITCARD, mn1[1].getWalType());
-  // }
+//  /**
+//    * tests that empty employee list is handled correctly.
+//    * @param dao mocking the dao class
+//    */
+//   @Test
+//    public final void testListAllEmpty(@Mocked final WalletDAO dao) {
+//     new Expectations() {
+//       {
+//         dao.show(); result = new ArrayList<Wallet>();
+//       }
+//     };
+//     new MockUp<WalletFactory>() {
+//       @Mock
+//       WalletDAO dao() {
+//         return dao;
+//       }
+//     };
+//     Wallet[] me = WalletFactory.showWallet();
+//     assertEquals(0, me.length);
+//   }
+//   /**
+//    * Tests that a list with some employees is handled correctly.
+//    * @param dao mocking the dao class
+//    */
+//   @Test
+//   public final void testListAllSome(@Mocked final WalletDAO dao) {
+//     final Wallet m2 = new Wallet(1, WalletType.NETBANKING, 1500.45, 1);
+//     final Wallet m3 = new Wallet(2, WalletType.NETBANKING, 2000.65, 2);
+//     final ArrayList<Wallet> mn = new ArrayList<Wallet>();
+//     new Expectations() {
+//       {
+//         mn.add(m2);
+//         mn.add(m3);
+//         dao.show(); result = mn;
+//       }
+//     };
+//     new MockUp<WalletFactory>() {
+//       @Mock
+//       WalletDAO dao() {
+//         return dao;
+//       }
+//     };
+//     Wallet[] mn1 = WalletFactory.showWallet();
+//     assertEquals(2, mn1.length);
+//     assertEquals(1, mn1[0].getWallId());
+//     assertEquals(2, mn1[1].getWallId());
+//     assertEquals(WalletType.NETBANKING, mn1[0].getWalletType());
+//     assertEquals(WalletType.NETBANKING, mn1[1].getWalletType());
+//     assertEquals(1500.45, mn1[0].getWallAmount(), 0);
+//     assertEquals(2000.65, mn1[1].getWallAmount(), 0);
+//     assertEquals(1, mn1[0].getCusId());
+//     assertEquals(2, mn1[1].getCusId());
+//   }
+// }

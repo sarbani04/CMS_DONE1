@@ -1,8 +1,9 @@
 package com.hexaware.MLP173.model;
 
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertFalse;
+import com.google.protobuf.TextFormat.ParseException;
 
 //import com.hexaware.MLP173.factory.MenuFactory;
 //import com.hexaware.MLP173.model.Menu;
@@ -16,7 +17,7 @@ import org.junit.runner.RunWith;
 // import java.util.ArrayList;
 // import mockit.MockUp;
 import mockit.integration.junit4.JMockit;
-//import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Test class for Menu.
@@ -56,6 +57,34 @@ public class MenuTest {
     assertEquals(120, menu.getFoodPrice(), 0);
     assertEquals(FoodStatus.AVAILABLE, menu.getFoodStatus());
     assertEquals("4.0", menu.getFoodRating());
+  }
+   /**
+   * Tests the toString() methods of the Customer class.
+   * @throws ParseException for date format validation.
+   */
+  @Test
+  public final void testToString() throws ParseException {
+    Menu menu1 = new Menu(1, "Dosa", "South-Indian", 120.00, FoodStatus.AVAILABLE, "4.0");
+    String result = String.format("%-15s %-25s %-15s %-15s %-15s %-15s",
+        menu1.getFoodId(), menu1.getFoodName(), menu1.getFoodPrice(), menu1.getFoodStatus(), menu1.getFoodDetail(), menu1.getFoodRating());
+    assertEquals(result, menu1.toString());
+  }
+  /**
+   * Tests for equals.
+   */
+  @Test
+  public final void testEquals() {
+    Menu m1 = null;
+    Menu m2 = new Menu(1, "Dosa", "South-Indian", 120.00, FoodStatus.AVAILABLE, "4.0");
+    Menu m3 = new Menu(1, "Dosa", "South-Indian", 120.00, FoodStatus.AVAILABLE, "4.0");
+    assertFalse(m2.equals(m1));
+    assertTrue(m2.equals(m3));
+    assertEquals(m2.hashCode(), m3.hashCode());
+    Vendor vendor = new Vendor();
+    assertFalse(m2.equals(vendor));
+    Menu m4 = new Menu();
+    assertFalse(m4.equals(m2));
+    assertEquals(m2.hashCode(), m3.hashCode());
   }
   /**
    * tests that empty menu list is handled correctly.

@@ -8,6 +8,8 @@
 </file>
 <file name="C:\Users\Hvuser\workspace\MLP173\restservice\canteenmanagement\src\main\java\com\hexaware\MLP173\factory\VendorFactory.java">
 </file>
+<file name="C:\Users\Hvuser\workspace\MLP173\restservice\canteenmanagement\src\main\java\com\hexaware\MLP173\factory\WalletFactory.java">
+</file>
 <file name="C:\Users\Hvuser\workspace\MLP173\restservice\canteenmanagement\src\main\java\com\hexaware\MLP173\model\Customer.java">
 </file>
 <file name="C:\Users\Hvuser\workspace\MLP173\restservice\canteenmanagement\src\main\java\com\hexaware\MLP173\model\FoodStatus.java">
@@ -42,6 +44,8 @@
 </file>
 <file name="C:\Users\Hvuser\workspace\MLP173\restservice\canteenmanagement\src\main\java\com\hexaware\MLP173\persistence\VendorMapper.java">
 </file>
+<file name="C:\Users\Hvuser\workspace\MLP173\restservice\canteenmanagement\src\main\java\com\hexaware\MLP173\persistence\WalletDAO.java">
+</file>
 <file name="C:\Users\Hvuser\workspace\MLP173\restservice\canteenmanagement\src\main\java\com\hexaware\MLP173\persistence\WalletMapper.java">
 </file>
 <file name="C:\Users\Hvuser\workspace\MLP173\restservice\canteenmanagement\src\main\java\com\hexaware\MLP173\util\CliMain.java">
@@ -56,6 +60,8 @@
 </file>
 <file name="C:\Users\Hvuser\workspace\MLP173\restservice\canteenmanagement\src\main\java\com\hexaware\MLP173\util\VendorRest.java">
 </file>
+<file name="C:\Users\Hvuser\workspace\MLP173\restservice\canteenmanagement\src\main\java\com\hexaware\MLP173\util\WalletRest.java">
+</file>
 <file name="C:\Users\Hvuser\workspace\MLP173\restservice\canteenmanagement\src\test\java\com\hexaware\MLP173\factory\CustomerFactoryTest.java">
 </file>
 <file name="C:\Users\Hvuser\workspace\MLP173\restservice\canteenmanagement\src\test\java\com\hexaware\MLP173\factory\MenuFactoryTest.java">
@@ -63,6 +69,8 @@
 <file name="C:\Users\Hvuser\workspace\MLP173\restservice\canteenmanagement\src\test\java\com\hexaware\MLP173\factory\OrderFactoryTest.java">
 </file>
 <file name="C:\Users\Hvuser\workspace\MLP173\restservice\canteenmanagement\src\test\java\com\hexaware\MLP173\factory\VendorFactoryTest.java">
+</file>
+<file name="C:\Users\Hvuser\workspace\MLP173\restservice\canteenmanagement\src\test\java\com\hexaware\MLP173\factory\WalletFactoryTest.java">
 </file>
 <file name="C:\Users\Hvuser\workspace\MLP173\restservice\canteenmanagement\src\test\java\com\hexaware\MLP173\model\CustomerTest.java">
 </file>

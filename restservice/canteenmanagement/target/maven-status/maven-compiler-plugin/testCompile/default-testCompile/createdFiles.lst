@@ -15,6 +15,7 @@ com\hexaware\MLP173\factory\OrderFactoryTest$10.class
 com\hexaware\MLP173\factory\MenuFactoryTest$1.class
 com\hexaware\MLP173\factory\CustomerFactoryTest$4.class
 com\hexaware\MLP173\factory\OrderFactoryTest$17.class
+com\hexaware\MLP173\factory\WalletFactoryTest$4.class
 com\hexaware\MLP173\factory\OrderFactoryTest$2.class
 com\hexaware\MLP173\factory\VendorFactoryTest$1.class
 com\hexaware\MLP173\factory\VendorFactoryTest$4.class
@@ -22,10 +23,13 @@ com\hexaware\MLP173\factory\CustomerFactoryTest$1.class
 com\hexaware\MLP173\factory\OrderFactoryTest.class
 com\hexaware\MLP173\factory\CustomerFactoryTest$8.class
 com\hexaware\MLP173\factory\OrderFactoryTest$8.class
+com\hexaware\MLP173\factory\WalletFactoryTest$1.class
 com\hexaware\MLP173\factory\OrderFactoryTest$5.class
 com\hexaware\MLP173\factory\VendorFactoryTest$7.class
+com\hexaware\MLP173\factory\WalletFactoryTest$3.class
 com\hexaware\MLP173\factory\MenuFactoryTest.class
 com\hexaware\MLP173\factory\VendorFactoryTest$10.class
+com\hexaware\MLP173\factory\WalletFactoryTest.class
 com\hexaware\MLP173\factory\OrderFactoryTest$18.class
 com\hexaware\MLP173\factory\OrderFactoryTest$14.class
 com\hexaware\MLP173\factory\OrderFactoryTest$3.class
@@ -39,6 +43,7 @@ com\hexaware\MLP173\factory\OrderFactoryTest$11.class
 com\hexaware\MLP173\factory\VendorFactoryTest$6.class
 com\hexaware\MLP173\factory\OrderFactoryTest$20.class
 com\hexaware\MLP173\factory\OrderFactoryTest$4.class
+com\hexaware\MLP173\factory\WalletFactoryTest$2.class
 com\hexaware\MLP173\factory\CustomerFactoryTest$9.class
 com\hexaware\MLP173\factory\CustomerFactoryTest$6.class
 com\hexaware\MLP173\factory\MenuFactoryTest$3.class

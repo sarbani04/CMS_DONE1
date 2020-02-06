@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vendor.java</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+  <link rel='stylesheet' type='text/css' href='../../../../coverage.css'/>
+  <link rel='shortcut icon' type='image/png' href='../../../../logo.png'/>
+  <script type='text/javascript' src='../../../../coverage.js'></script>
+  <script type='text/javascript' src='../../../../prettify.js'></script>
+</head>
+<body onload='prettyPrint()'>
+  <table cellpadding='0' cellspacing='1'>
+    <caption>canteenmanagement\src\main\java\com\hexaware\MLP173\model\Vendor.java</caption>
+    <tr>
+      <td class='line'>1</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>package com.hexaware.MLP173.model;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td><pre class='imports prettyprint' onclick='showHideLines(this)'><div>import java.util.Objects;
+</div><span>import ...</span></pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/**
+ * Menu class used to display menu information.
+ * @author hexware
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>8</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>public class Vendor {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/**
+ * venId to store venId.
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>12</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private int <span class='instance covered' title='Reads: 12 Writes: 9'>venId</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>  /**
+ * VenAddress to store Item Name.
+ */</div><span>  /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>16</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private String <span class='instance covered' title='Reads: 10 Writes: 9'>venName</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>   /**
+ * VenAddress to store Item details.
+ */</div><span>   /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>20</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private String <span class='instance covered' title='Reads: 8 Writes: 9'>venPassword</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div> /**
+ * VenAddress to store Item price.
+ */</div><span> /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>24</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private String <span class='instance covered' title='Reads: 10 Writes: 9'>venEmail</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div> /**
+ * VenAddress to store Item Status.
+ */</div><span> /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>28</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private String <span class='instance covered' title='Reads: 10 Writes: 9'>venMobile</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div> /**
+ * VenAddress to store Item Rate.
+ */</div><span> /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>32</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private String <span class='instance covered' title='Reads: 10 Writes: 9'>venAddress</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>  /**
+   * Default Constructor.
+   */</div><span>  /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>36</td><td class='count'>4</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l36s0'>  public Vendor() {</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.CustomerTest#testToString: 67</li>
+          <li>com.hexaware.MLP173.model.MenuTest#testEquals: 83</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 44</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 64</li>
+        </ol>
+      </td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>38</td><td class='count'>4</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l38s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.CustomerTest#testToString: 67</li>
+          <li>com.hexaware.MLP173.model.MenuTest#testEquals: 83</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 44</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 64</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/**
+ * @param argVenId to initialize food id.
+ * @param argVenName to initialize food Name.
+ * @param argVenPassword to initialize food price.
+ * @param argVenEmail to initialize food Detail.
+ * @param argVenMobile to initialize food Status.
+ * @param argVenAddress to initialize food Rating.
+ * used to get details through constructor.
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>48</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public Vendor(final int argVenId, final String argVenName, final String argVenPassword,</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>49</td><td class='count'>8</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l49s0'>        final String argVenEmail, final String argVenMobile, final String argVenAddress) {</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testListAllSome: 58, 59</li>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testfindByVendorId: 95, 96</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testToString: 54</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 37, 38</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 66</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>50</td><td class='count'>8</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l50s0'>    this.venId = argVenId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testListAllSome: 58, 59</li>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testfindByVendorId: 95, 96</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testToString: 54</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 37, 38</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 66</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>51</td><td class='count'>8</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l51s0'>    this.venName = argVenName;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testListAllSome: 58, 59</li>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testfindByVendorId: 95, 96</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testToString: 54</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 37, 38</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 66</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>52</td><td class='count'>8</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l52s0'>    this.venPassword = argVenPassword;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testListAllSome: 58, 59</li>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testfindByVendorId: 95, 96</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testToString: 54</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 37, 38</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 66</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>53</td><td class='count'>8</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l53s0'>    this.venEmail = argVenEmail;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testListAllSome: 58, 59</li>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testfindByVendorId: 95, 96</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testToString: 54</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 37, 38</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 66</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>54</td><td class='count'>8</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l54s0'>    this.venMobile = argVenMobile;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testListAllSome: 58, 59</li>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testfindByVendorId: 95, 96</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testToString: 54</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 37, 38</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 66</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>55</td><td class='count'>8</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l55s0'>    this.venAddress = argVenAddress;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testListAllSome: 58, 59</li>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testfindByVendorId: 95, 96</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testToString: 54</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 37, 38</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 66</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>56</td><td class='count'>8</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l56s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testListAllSome: 58, 59</li>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testfindByVendorId: 95, 96</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testToString: 54</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 37, 38</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 66</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>57</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>58</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public final boolean equals(final Object obj) {</pre></td>
+    </tr>
+    <tr>
+      <td></td><td class='count'>4</td>
+      <td class='paths'>
+        <span style='cursor:default; background-color:#8e7100' onclick='hidePath()'>Path coverage: 4/9</span>
+        <span class='covered' onclick="showPath(this,'l59s0 l60s0')">A: 1</span>
+        <span class='covered' onclick="showPath(this,'l59s0 l62s0 l63s0')">B: 1</span>
+        <span class='covered' onclick="showPath(this,'l59s0 l62s0 l65s0 l66s0 l66s1 l67s0 l67s1 l68s0 l68s1 l69s0 l69s1 l70s0 l70s1 l71s0 l72s0')">C: 1</span>
+        <span class='covered' onclick="showPath(this,'l59s0 l62s0 l65s0 l66s0 l74s0')">D: 1</span>
+        <span class='uncovered' onclick="showPath(this,'l59s0 l62s0 l65s0 l66s0 l66s1 l67s0 l74s0')">E: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l59s0 l62s0 l65s0 l66s0 l66s1 l67s0 l67s1 l68s0 l74s0')">F: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l59s0 l62s0 l65s0 l66s0 l66s1 l67s0 l67s1 l68s0 l68s1 l69s0 l74s0')">G: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l59s0 l62s0 l65s0 l66s0 l66s1 l67s0 l67s1 l68s0 l68s1 l69s0 l69s1 l70s0 l74s0')">H: 0</span>
+        <span class='uncovered' onclick="showPath(this,'l59s0 l62s0 l65s0 l66s0 l66s1 l67s0 l67s1 l68s0 l68s1 l69s0 l69s1 l70s0 l70s1 l71s0 l74s0')">I: 0</span>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>59</td><td class='count'>4</td>
+      <td><pre class='prettyprint jmp'>    <span id='l59s0' title='Executions: 4' class='covered cp' onclick='showHide(this,0)'>if (obj == null)</span> {</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 40, 41, 43, 45</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>60</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l60s0'>      return false;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 41</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>61</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>62</td><td class='count'>3</td>
+      <td><pre class='prettyprint jmp'>    <span id='l62s0' title='Executions: 3' class='covered cp' onclick='showHide(this,0)'>if (getClass() != obj.getClass())</span> {</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 40, 43, 45</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>63</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l63s0'>      return false;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 43</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>64</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>65</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l65s0'>    Vendor vendor = (Vendor) obj;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 40, 45</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>66</td><td class='count'>2</td>
+      <td><pre class='prettyprint jmp'>    <span id='l66s0' title='Executions: 2' class='covered cp' onclick='showHide(this,0)'>if (Objects.equals(venId, vendor.venId)</span></pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 40, 45</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>67</td><td class='count'>1</td>
+      <td><pre class='prettyprint jmp'>        && <span id='l67s0' title='Executions: 1' class='covered cp' onclick='showHide(this,0)'>Objects.equals(venName, vendor.venName)</span></pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 40</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>68</td><td class='count'>1</td>
+      <td><pre class='prettyprint jmp'>        && <span id='l68s0' title='Executions: 1' class='covered cp' onclick='showHide(this,0)'>Objects.equals(venPassword, vendor.venPassword)</span></pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 40</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>69</td><td class='count'>1</td>
+      <td><pre class='prettyprint jmp'>        && <span id='l69s0' title='Executions: 1' class='covered cp' onclick='showHide(this,0)'>Objects.equals(venEmail, vendor.venEmail)</span></pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 40</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>70</td><td class='count'>1</td>
+      <td><pre class='prettyprint jmp'>        && <span id='l70s0' title='Executions: 1' class='covered cp' onclick='showHide(this,0)'>Objects.equals(venMobile, vendor.venMobile)</span></pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 40</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>71</td><td class='count'>1</td>
+      <td><pre class='prettyprint jmp'>        && <span id='l71s0' title='Executions: 1' class='covered cp' onclick='showHide(this,0)'>Objects.equals(venAddress, vendor.venAddress)) {</span></pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 40</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>72</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l72s0'>      return true;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 40</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>73</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>74</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l74s0'>    return false;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 45</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>75</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>76</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>77</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public final int hashCode() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>78</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l78s0'>    return Objects.hash(venId, venName, venPassword, venEmail, venMobile, venAddress);</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testEquals: 46x2</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>79</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+     * @return this venId
+     */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>83</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final int getVenId() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>84</td><td class='count'>5</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l84s0'>    return venId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testListAllSome: 76, 77</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testToString: 56</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 67, 79</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>85</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+     * @param argVenId gets the venId.
+     */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>89</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setVenId(final int argVenId) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>90</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l90s0'>    this.venId = argVenId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 73</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>91</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l91s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 73</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>      /**
+     * @return this VenName.
+     */</div><span>      /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>95</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final String getVenName() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>96</td><td class='count'>5</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l96s0'>    return venName;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testListAllSome: 78, 79</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testToString: 56</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 68, 80</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>97</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>      /**
+       * @param argVenName gets the VenName.
+       */</div><span>      /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>101</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setVenName(final String argVenName) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>102</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l102s0'>    this.venName = argVenName;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 74</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>103</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l103s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 74</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>     /**
+     * @return this VenPassword.
+     */</div><span>     /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>107</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final String getVenPassword() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>108</td><td class='count'>4</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l108s0'>    return venPassword;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testListAllSome: 80, 81</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 69, 81</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>109</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>      /**
+       * @param argVenPassword gets the VenPassword.
+       */</div><span>      /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>113</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setVenPassword(final String argVenPassword) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>114</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l114s0'>    this.venPassword = argVenPassword;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 75</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>115</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l115s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 75</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>      /**
+     * @return this VenEmail.
+     */</div><span>      /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>119</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final String getVenEmail() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>120</td><td class='count'>5</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l120s0'>    return venEmail;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testListAllSome: 82, 83</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testToString: 56</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 70, 82</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>121</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>      /**
+       * @param argVenEmail gets the VenEmail.
+       */</div><span>      /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>125</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setVenEmail(final String argVenEmail) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>126</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l126s0'>    this.venEmail = argVenEmail;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 76</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>127</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l127s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 76</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>       /**
+     * @return this VenMobile.
+     */</div><span>       /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>131</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final String getVenMobile() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>132</td><td class='count'>5</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l132s0'>    return venMobile;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testListAllSome: 84, 85</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testToString: 56</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 71, 83</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>133</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>      /**
+       * @param argVenMobile gets the VenMobile.
+       */</div><span>      /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>137</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setVenMobile(final String argVenMobile) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>138</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l138s0'>    this.venMobile = argVenMobile;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 77</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>139</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l139s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 77</li>
+        </ol>
+      </td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>  /**
+     * @return this VenAddress.
+     */</div><span>  /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>144</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final String getVenAddress() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>145</td><td class='count'>5</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l145s0'>    return venAddress;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.VendorFactoryTest#testListAllSome: 86, 87</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testToString: 56</li>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 72, 84</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>146</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>      /**
+       * @param argVenAddress gets the VenAddress.
+       */</div><span>      /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>150</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setVenAddress(final String argVenAddress) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>151</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l151s0'>    this.venAddress = argVenAddress;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 78</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>152</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l152s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testVendor: 78</li>
+        </ol>
+      </td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>  /*
+  * toString() method to print details.
+  */</div><span>  /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>157</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>158</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final String toString() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>159</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l159s0'>    return String.format("%16s %15s %25s %20s %20s", venId, venName, venEmail, venMobile, venAddress);</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.VendorTest#testToString: 57</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>160</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>161</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>}</pre></td>
+    </tr>
+  </table>
+</body>
+</html>

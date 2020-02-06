@@ -9,11 +9,13 @@ import java.text.ParseException;
 import com.hexaware.MLP173.factory.CustomerFactory;
 import com.hexaware.MLP173.factory.OrderFactory;
 import com.hexaware.MLP173.factory.VendorFactory;
+import com.hexaware.MLP173.factory.WalletFactory;
 import com.hexaware.MLP173.factory.MenuFactory;
 import com.hexaware.MLP173.model.Menu;
 import com.hexaware.MLP173.model.Customer;
 import com.hexaware.MLP173.model.OrderDetail;
 import com.hexaware.MLP173.model.Vendor;
+import com.hexaware.MLP173.model.Wallet;
 /**
  * CliMain used as Client interface for java coading.
  * @author hexware
@@ -36,7 +38,8 @@ class CliMain {
     System.out.println("7. Accept And Reject");
     System.out.println("8. Place Order");
     System.out.println("9. Cancel Order");
-    System.out.println("10. Exit");
+    System.out.println("10. Wallet Details");
+    System.out.println("11. Exit");
     mainMenuDetails();
   }
 /**
@@ -73,8 +76,10 @@ class CliMain {
           break;
         case 9:
           cancelOrder();
-          break;
         case 10:
+          showWalletInfo();
+          break;
+        case 11:
           Runtime.getRuntime().halt(0);
         default:
           System.out.println("Choose either 1 or 2");
@@ -86,6 +91,41 @@ class CliMain {
     option.nextLine();
     mainMenu();
   }
+  private void showWalletInfo() {
+    int count = 0;
+    System.out.println("Enter Username : ");
+    String username = option.next();
+    Console console = System.console();
+    char[] pwd = console.readPassword("Enter Password : ");
+    String password = String.valueOf(pwd);
+    //String password = option.next();
+    try {
+      count = CustomerFactory.validateCustomer(username, password);
+    } catch (IllegalArgumentException e) {
+      System.out.println(e.getMessage());
+      mainMenu();
+    }
+    if (count == 1) {
+      Customer customer = CustomerFactory.findByCustomerName(username);
+      int custId = customer.getCusId();
+      Wallet[] wallet = WalletFactory.showWallet(custId);
+      System.out.println("----------------------------------------------------"
+              + "----------------------------------------------------------------------");
+      System.out.printf("%-15s %-15s %-15s %-15s", "CUS_ID", "WAL_ID", "WAL_AMOUNT", "WAL_TYPE");
+      // CUS_ID,WAL_ID,WAL_AMOUNT,WAL_TYPE
+      System.out.println();
+      System.out.println("----------------------------------------------------"
+            + "----------------------------------------------------------------------");
+      for (Wallet w : wallet) {
+        System.out.println(w);
+        System.out.println();
+      }
+    } else {
+      System.out.println("Invalid Credentials...");
+    }
+    mainMenu();
+  }
+
   private void cancelOrder() {
     int ordId;
     int custId;

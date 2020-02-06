@@ -33,10 +33,10 @@ public class VendorFactory {
   /**
     * retrive vendor info.
     * @return array of menu objects.
-    * @param vendorName to accept customer name.
+    * @param venName to accept customer name.
     */
-  public static Vendor findByVendorName(final String vendorName) {
-    Vendor vendor = dao().findByVendorName(vendorName);
+  public static Vendor findByVendorName(final String venName) {
+    Vendor vendor = dao().findByVendorName(venName);
     return vendor;
   }
       /**

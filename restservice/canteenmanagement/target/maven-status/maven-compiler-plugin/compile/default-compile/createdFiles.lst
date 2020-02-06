@@ -5,6 +5,7 @@ com\hexaware\MLP173\factory\OrderFactory.class
 com\hexaware\MLP173\model\WalType.class
 com\hexaware\MLP173\persistence\DbConnection.class
 com\hexaware\MLP173\model\Customer.class
+com\hexaware\MLP173\persistence\WalletDAO.class
 com\hexaware\MLP173\util\OrderRest.class
 com\hexaware\MLP173\util\CORSFilter.class
 com\hexaware\MLP173\util\FTPApplication.class
@@ -26,4 +27,6 @@ com\hexaware\MLP173\model\Vendor.class
 com\hexaware\MLP173\persistence\WalletMapper.class
 com\hexaware\MLP173\util\CliMain.class
 com\hexaware\MLP173\model\FoodStatus.class
+com\hexaware\MLP173\util\WalletRest.class
+com\hexaware\MLP173\factory\WalletFactory.class
 com\hexaware\MLP173\util\MenuRest.class

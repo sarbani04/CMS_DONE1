@@ -27,15 +27,7 @@ public class OrderFactory {
     DbConnection db = new DbConnection();
     return db.getConnect().onDemand(OrderDAO.class);
   }
-  /**
-   * Call the data base connection.
-   * @return the array of menu object.
-   * @param menuId to accept menu id.
-   */
-  public static Menu showMenuItem(final int menuId) {
-    Menu orderDetail = dao().findByMenuId(menuId);
-    return orderDetail;
-  }
+
   /**
    * Call the data base connection.
    * @return the array of menu object.
@@ -178,15 +170,6 @@ public class OrderFactory {
       orderdetail.setOrdAmount(totalAmount);
       dao().placeOrder(orderdetail);
       dao().updateBalance(diff, orderdetail.getWalType(), orderdetail.getCusId());
-      if (totalAmount >= 500 && totalAmount <= 600) {
-        System.out.println("You are getting a complement");
-        Menu compl = OrderFactory.showMenuItem(7);
-        System.out.println(compl.getFoodName());
-      } else if (totalAmount >= 600 && totalAmount <= 700) {
-        System.out.println("You are getting a complement");
-        Menu compl = OrderFactory.showMenuItem(8);
-        System.out.println(compl.getFoodName());
-      }
       return "Order Placed Successfully...";
     }
   }

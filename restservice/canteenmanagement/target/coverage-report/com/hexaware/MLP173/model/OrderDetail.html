@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OrderDetail.java</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+  <link rel='stylesheet' type='text/css' href='../../../../coverage.css'/>
+  <link rel='shortcut icon' type='image/png' href='../../../../logo.png'/>
+  <script type='text/javascript' src='../../../../coverage.js'></script>
+  <script type='text/javascript' src='../../../../prettify.js'></script>
+</head>
+<body onload='prettyPrint()'>
+  <table cellpadding='0' cellspacing='1'>
+    <caption>canteenmanagement\src\main\java\com\hexaware\MLP173\model\OrderDetail.java</caption>
+    <tr>
+      <td class='line'>1</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>package com.hexaware.MLP173.model;</pre></td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td><pre class='imports prettyprint' onclick='showHideLines(this)'><div>import java.util.Date;
+import java.util.Objects;</div><span>import ...</span></pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/**
+ * Menu class used to display menu information.
+ * @author hexware
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>9</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>public class OrderDetail {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/**
+ * ordId to store orderId.
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>13</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private int <span class='instance covered' title='Reads: 18 Writes: 41'>ordId</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/**
+ * ordTime to store time.
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>17</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private Date <span class='instance covered' title='Reads: 12 Writes: 44'>ordTime</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>  /**
+ * ordAmount to store amount.
+ */</div><span>  /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>21</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private Double <span class='instance covered' title='Reads: 8 Writes: 42'>ordAmount</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>   /**
+ * ordLocation to store location details.
+ */</div><span>   /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>25</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private String <span class='instance covered' title='Reads: 1 Writes: 40'>ordLocation</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div> /**
+ * ordLocation to store Location.
+ */</div><span> /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>29</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private OrderStatus <span class='instance covered' title='Reads: 9 Writes: 42'>ordStatus</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div> /**
+ * qtyOrder to store order of quantity.
+ */</div><span> /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>33</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private int <span class='instance covered' title='Reads: 9 Writes: 44'>qtyOrder</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div> /**
+ * cusId to store customer ID.
+ */</div><span> /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>37</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private int <span class='instance covered' title='Reads: 14 Writes: 44'>cusId</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>  /**
+ * foodId to store Food ID.
+ */</div><span>  /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>41</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private int <span class='instance covered' title='Reads: 9 Writes: 44'>foodId</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>  /**
+ * venId to store vendor ID.
+ */</div><span>  /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>45</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private int <span class='instance covered' title='Reads: 9 Writes: 44'>venId</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>  /**
+ * waltype to store wallet type.
+ */</div><span>  /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>49</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private String <span class='instance covered' title='Reads: 12 Writes: 44'>walType</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>  /**
+   * waltype to store wallet type.
+   */</div><span>  /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>53</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  private String <span class='instance covered' title='Reads: 6 Writes: 44'>ordComments</span>;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>  /**
+   * Default Constructor.
+   */</div><span>  /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>57</td><td class='count'>5</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l57s0'>  public OrderDetail() {</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 207, 216, 225</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 54</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testEquals: 44</li>
+        </ol>
+      </td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'>59</td><td class='count'>5</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l59s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 207, 216, 225</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 54</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testEquals: 44</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>/**
+ * @param argOrdId to initialize order Id.
+ * @param argOrdTime to initialize order Time.
+ * @param argOrdAmount to initialize order Amount.
+ * @param argOrdLocation to initialize order Location.
+ * @param argOrdStatus to initialize order Status.
+ * @param argQtyOrder to initialize quantity Order.
+ * @param argCusId to initialize customer Id.
+ * @param argFoodId to initialize food Id.
+ * @param argVenId to initialize vendor Id.
+ * @param argWalType to initialize Wallet type.
+ * @param argOrdComments to initialize Wallet type
+ * used to get details through constructor.
+ */</div><span>/*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>74</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public OrderDetail(final int argOrdId, final Date argOrdTime, final Double argOrdAmount,</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>75</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>        final String argOrdLocation, final OrderStatus argOrdStatus, final int argQtyOrder,</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>76</td><td class='count'>40</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l76s0'>        final int argCusId, final int argFoodId, final int argVenId, final String argWalType, final String argOrdComments) {</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 57, 58</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 418, 419</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testpendingCustomer: 341, 342, 346, 347, 348</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testVendorHistory: 106</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>77</td><td class='count'>40</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l77s0'>    this.ordId = argOrdId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 57, 58</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 418, 419</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testpendingCustomer: 341, 342, 346, 347, 348</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testVendorHistory: 106</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>78</td><td class='count'>40</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l78s0'>    this.ordTime = argOrdTime;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 57, 58</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 418, 419</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testpendingCustomer: 341, 342, 346, 347, 348</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testVendorHistory: 106</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>79</td><td class='count'>40</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l79s0'>    this.ordAmount = argOrdAmount;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 57, 58</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 418, 419</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testpendingCustomer: 341, 342, 346, 347, 348</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testVendorHistory: 106</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>80</td><td class='count'>40</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l80s0'>    this.ordLocation = argOrdLocation;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 57, 58</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 418, 419</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testpendingCustomer: 341, 342, 346, 347, 348</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testVendorHistory: 106</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>81</td><td class='count'>40</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l81s0'>    this.ordStatus = argOrdStatus;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 57, 58</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 418, 419</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testpendingCustomer: 341, 342, 346, 347, 348</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testVendorHistory: 106</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>82</td><td class='count'>40</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l82s0'>    this.qtyOrder = argQtyOrder;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 57, 58</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 418, 419</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testpendingCustomer: 341, 342, 346, 347, 348</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testVendorHistory: 106</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>83</td><td class='count'>40</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l83s0'>    this.cusId = argCusId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 57, 58</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 418, 419</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testpendingCustomer: 341, 342, 346, 347, 348</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testVendorHistory: 106</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>84</td><td class='count'>40</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l84s0'>    this.foodId = argFoodId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 57, 58</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 418, 419</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testpendingCustomer: 341, 342, 346, 347, 348</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testVendorHistory: 106</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>85</td><td class='count'>40</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l85s0'>    this.venId = argVenId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 57, 58</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 418, 419</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testpendingCustomer: 341, 342, 346, 347, 348</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testVendorHistory: 106</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>86</td><td class='count'>40</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l86s0'>    this.walType = argWalType;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 57, 58</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 418, 419</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testpendingCustomer: 341, 342, 346, 347, 348</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testVendorHistory: 106</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>87</td><td class='count'>40</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l87s0'>    this.ordComments = argOrdComments;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 57, 58</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 418, 419</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testpendingCustomer: 341, 342, 346, 347, 348</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testVendorHistory: 106</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>88</td><td class='count'>40</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l88s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 57, 58</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 418, 419</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testpendingCustomer: 341, 342, 346, 347, 348</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testVendorHistory: 106</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>89</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>90</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public final boolean equals(final Object obj) {</pre></td>
+    </tr>
+    <tr>
+      <td></td><td class='count'>7</td>
+      <td class='paths'>
+        <span style='cursor:default; background-color:#00ff00' onclick='hidePath()'>Path coverage: 4/4</span>
+        <span class='covered' onclick="showPath(this,'l91s0 l92s0')">A: 1</span>
+        <span class='covered' onclick="showPath(this,'l91s0 l94s0 l95s0')">B: 1</span>
+        <span class='covered' onclick="showPath(this,'l91s0 l94s0 l97s0 l98s0 l99s0')">C: 4</span>
+        <span class='covered' onclick="showPath(this,'l91s0 l94s0 l97s0 l98s0 l101s0')">D: 1</span>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>91</td><td class='count'>7</td>
+      <td><pre class='prettyprint jmp'>    <span id='l91s0' title='Executions: 7' class='covered cp' onclick='showHide(this,0)'>if (obj == null)</span> {</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 233x2, 252</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testEquals: 40, 41, 43, 45</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>92</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l92s0'>      return false;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.OrderTest#testEquals: 41</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>93</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>94</td><td class='count'>6</td>
+      <td><pre class='prettyprint jmp'>    <span id='l94s0' title='Executions: 6' class='covered cp' onclick='showHide(this,0)'>if (getClass() != obj.getClass())</span> {</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 233x2, 252</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testEquals: 40, 43, 45</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>95</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l95s0'>      return false;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.OrderTest#testEquals: 43</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>96</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>97</td><td class='count'>5</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l97s0'>    OrderDetail orderdetail = (OrderDetail) obj;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 233x2, 252</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testEquals: 40, 45</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>98</td><td class='count'>5</td>
+      <td><pre class='prettyprint jmp'>    <span id='l98s0' title='Executions: 5' class='covered cp' onclick='showHide(this,0)'>if (Objects.equals(ordId, orderdetail.ordId))</span> {</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 233x2, 252</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testEquals: 40, 45</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>99</td><td class='count'>4</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l99s0'>      return true;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 233x2, 252</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testEquals: 40</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>100</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>101</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l101s0'>    return false;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.OrderTest#testEquals: 45</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>102</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>103</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>104</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>    public final int hashCode() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>105</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l105s0'>    return Objects.hash(ordId);</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.OrderTest#testEquals: 46x2</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>106</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+     * @return this ordId.
+     */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>110</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final int getOrdId() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>111</td><td class='count'>6</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l111s0'>    return ordId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 75, 76</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 436, 437</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 60, 84</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>112</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+     * @param argOrdId gets the ordId.
+     */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>116</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setOrdId(final int argOrdId) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>117</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l117s0'>    this.ordId = argOrdId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 73</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>118</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l118s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 73</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+     * @return this ordTime
+     */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>122</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final Date getOrdTime() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>123</td><td class='count'>12</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l123s0'>    return ordTime;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 77, 78</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 252x2, 254x2, 256x2</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 438, 439</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 61, 85</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>124</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+     * @param argOrdTime gets the ordTime.
+     */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>128</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setOrdTime(final Date argOrdTime) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>129</td><td class='count'>4</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l129s0'>    this.ordTime = argOrdTime;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 213, 222, 231</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 74</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>130</td><td class='count'>4</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l130s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 213, 222, 231</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 74</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+    * @return this ordAmount.
+    */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>134</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final Double getOrdAmount() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>135</td><td class='count'>8</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l135s0'>    return ordAmount;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 79, 80</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 440, 441</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testAcceptOrRejectOrder: 285</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testCancelOrder: 399</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 62, 86</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>136</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+    * @param argOrdAmount gets the ordAmount.
+    */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>140</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setOrdAmount(final Double argOrdAmount) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>141</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l141s0'>    this.ordAmount = argOrdAmount;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 252</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 75</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>142</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l142s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 252</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 75</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+     * @return this ordLocation.
+     */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>146</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final String getOrdLocation() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>147</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l147s0'>    return ordLocation;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 63</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>148</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+     * @param argOrdLocation gets the ordLocation.
+     */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>152</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setOrdLocation(final String argOrdLocation) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>153</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l153s0'>    this.ordLocation = argOrdLocation;</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>154</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l154s0'>  }</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+     * @return this ordStatus.
+     */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>158</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final OrderStatus getOrdStatus() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>159</td><td class='count'>9</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l159s0'>    return ordStatus;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 81, 82</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 442, 443</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testCancelOrder: 399, 401, 403</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 64, 87</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>160</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+    * @param argOrdStatus gets the ordStatus.
+    */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>164</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setOrdStatus(final OrderStatus argOrdStatus) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>165</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l165s0'>    this.ordStatus = argOrdStatus;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 252</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 76</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>166</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l166s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 252</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 76</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+     * @return this qtyOrder.
+     */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>170</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final int getQtyOrder() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>171</td><td class='count'>9</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l171s0'>    return qtyOrder;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 83, 84</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 252, 254, 256</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 444, 445</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 65, 88</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>172</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>      /**
+       * @param argQtyOrder gets the qtyOrder.
+       */</div><span>      /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>176</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setQtyOrder(final int argQtyOrder) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>177</td><td class='count'>4</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l177s0'>    this.qtyOrder = argQtyOrder;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 211, 220, 229</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 77</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>178</td><td class='count'>4</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l178s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 211, 220, 229</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 77</li>
+        </ol>
+      </td>
+    </tr>
+    <tr><td class='line'></td><td colspan='2'>&nbsp;</td></tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>  /**
+     * @return this cusId.
+     */</div><span>  /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>183</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final int getCusId() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>184</td><td class='count'>14</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l184s0'>    return cusId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 85, 86</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 252x2, 254, 256</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 446, 447</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testAcceptOrRejectOrder: 285</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testCancelOrder: 399, 401</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>185</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>      /**
+       * @param argCusId gets the cusId.
+       */</div><span>      /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>189</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setCusId(final int argCusId) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>190</td><td class='count'>4</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l190s0'>    this.cusId = argCusId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 208, 217, 226</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 78</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>191</td><td class='count'>4</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l191s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 208, 217, 226</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 78</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+     * @return this foodId.
+     */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>195</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final int getFoodId() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>196</td><td class='count'>9</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l196s0'>    return foodId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 87, 88</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 252, 254, 256</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 448, 449</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 67, 90</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>197</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+    * @param argFoodId gets the foodId.
+    */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>201</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setFoodId(final int argFoodId) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>202</td><td class='count'>4</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l202s0'>    this.foodId = argFoodId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 209, 218, 227</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 79</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>203</td><td class='count'>4</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l203s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 209, 218, 227</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 79</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+     * @return this venId.
+     */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>207</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final int getVenId() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>208</td><td class='count'>9</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l208s0'>    return venId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 89, 90</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 450, 451</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testAcceptOrRejectOrder: 283, 285, 287</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 68, 91</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>209</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+    * @param argVenId gets the venId.
+    */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>213</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setVenId(final int argVenId) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>214</td><td class='count'>4</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l214s0'>    this.venId = argVenId;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 210, 219, 228</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 80</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>215</td><td class='count'>4</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l215s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 210, 219, 228</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 80</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>      /**
+     * @return this walletype.
+     */</div><span>      /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>219</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final String getWalType() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>220</td><td class='count'>12</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l220s0'>    return walType;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 91, 93</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 252x2, 254, 256</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 452, 454</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testAcceptOrRejectOrder: 285</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testCancelOrder: 399</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 69</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>221</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+    * @param argWalType gets the walleType.
+    */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>225</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setWalType(final String argWalType) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>226</td><td class='count'>4</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l226s0'>    this.walType = argWalType;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 212, 221, 230</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 81</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>227</td><td class='count'>4</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l227s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 212, 221, 230</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 81</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+     * @return this OrdComments.
+     */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>231</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final String getOrdComments() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>232</td><td class='count'>6</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l232s0'>    return ordComments;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome: 92, 94</li>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testListAllSome1: 453, 455</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 70, 93</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>233</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'></td><td>&nbsp;</td>
+      <td class='comment' onclick='showHideLines(this)'><div>    /**
+      * @param argOrdComments gets the walleType.
+      */</div><span>    /*...*/</span></td>
+    </tr>
+    <tr>
+      <td class='line'>237</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final void setOrdComments(final String argOrdComments) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>238</td><td class='count'>4</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l238s0'>    this.ordComments = argOrdComments;</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 214, 223, 232</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 82</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>239</td><td class='count'>4</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l239s0'>  }</pre>
+        <ol style='display:none'>
+          <li>com.hexaware.MLP173.factory.OrderFactoryTest#testPlaceOrder: 214, 223, 232</li>
+          <li>com.hexaware.MLP173.model.OrderTest#testOrder: 82</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>240</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  @Override</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>241</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  public final String toString() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>242</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l242s0'>    return String.format("%-15s %-15s %-15s %-18s %-15s %-15s %-15s %-15s %-15s", ordId, ordTime, ordAmount, ordStatus, qtyOrder,</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>243</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l243s0'>        cusId, foodId, venId, walType);</pre>
+        <ol style='display:none'></ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>244</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>  }</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>245</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>}</pre></td>
+    </tr>
+  </table>
+</body>
+</html>

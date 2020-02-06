@@ -109,6 +109,9 @@ public class Wallet {
   public final void setWalAmount(final int argWalAmount) {
     this.walAmount = argWalAmount;
   }
+  @Override
+  public final String toString() {
+    return String.format("%-15s %-15s %-15s %-15s", cusId, walId, walAmount, walType);
+  }
 }
-
 
