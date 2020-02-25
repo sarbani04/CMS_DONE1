@@ -4,6 +4,8 @@ import org.skife.jdbi.v2.sqlobject.SqlQuery;
 import org.skife.jdbi.v2.sqlobject.SqlUpdate;
 import org.skife.jdbi.v2.sqlobject.customizers.Mapper;
 import java.util.List;
+
+import com.hexaware.MLP173.model.Customer;
 import com.hexaware.MLP173.model.Menu;
 import com.hexaware.MLP173.model.OrderDetail;
 import com.hexaware.MLP173.model.Wallet;
@@ -38,6 +40,13 @@ public interface OrderDAO {
   @SqlQuery("Select * from FOOD_ITEM WHERE FOOD_ID=:foodId")
     @Mapper(MenuMapper.class)
     Menu findByMenuId(@Bind("foodId") int foodId);
+     /**
+     * @param foodId for menu details.
+     * @return the all the Menu record.
+     */
+  @SqlQuery("Select * from Customer WHERE CUS_ID=:cusId")
+  @Mapper(CustomerMapper.class)
+  Customer findByCusId(@Bind("cusId") int cusId);
     /**
      * @return the all the Order record.
      */

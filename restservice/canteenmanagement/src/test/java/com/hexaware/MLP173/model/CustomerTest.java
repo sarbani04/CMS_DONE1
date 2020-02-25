@@ -112,68 +112,6 @@ public class CustomerTest {
     assertEquals(dob, m.getCusDob());
     assertEquals("Chennai", m.getCusAddress());
   }
-  // /**
-  //  * tests that empty employee list is handled correctly.
-  //  * @param dao mocking the dao class
-  //  */
-  // @Test
-  //  public final void testListAllEmpty(@Mocked final CustomerDAO dao) {
-  //   new Expectations() {
-  //     {
-  //       dao.show(); result = new ArrayList<Customer>();
-  //     }
-  //   };
-  //   new MockUp<CustomerFactory>() {
-  //     @Mock
-  //     CustomerDAO dao() {
-  //       return dao;
-  //     }
-  //   };
-  //   Customer[] me = CustomerFactory.showCustomer();
-  //   assertEquals(0, me.length);
-  // }
-  // /**
-  //  * Tests that a list with some employees is handled correctly.
-  //  * @param dao mocking the dao class.
-  //  * @throws ParseException for handling Dateformat errors.
-  //  */
-  // @Test
-  // public final void testListAllSome(@Mocked final CustomerDAO dao) throws ParseException {
-  //   final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-  //   final String dt = new String("2020-03-18");
-  //   final Date odt = sdf.parse(dt);
-  //   final Customer m2 = new Customer(1, "Aman", "Password", "abc@xyz.com", "6207701328", odt, "Chennai");
-  //   final Customer m3 = new Customer(1, "Aman", "Password", "abc@xyz.com", "6207701328", odt, "Chennai");
-  //   final ArrayList<Customer> mn = new ArrayList<Customer>();
-  //   new Expectations() {
-  //     {
-  //       mn.add(m2);
-  //       mn.add(m3);
-  //       dao.show(); result = mn;
-  //     }
-  //   };
-  //   new MockUp<CustomerFactory>() {
-  //     @Mock
-  //     CustomerDAO dao() {
-  //       return dao;
-  //     }
-  //   };
-  //   Customer[] mn1 = CustomerFactory.showCustomer();
-  //   assertEquals(2, mn1.length);
-  //   assertEquals(1, mn1[0].getCusId());
-  //   assertEquals(1, mn1[1].getCusId());
-  //   assertEquals("Aman", mn1[0].getCusName());
-  //   assertEquals("Aman", mn1[1].getCusName());
-  //   assertEquals("Password", mn1[0].getCusPassword());
-  //   assertEquals("Password", mn1[1].getCusPassword());
-  //   assertEquals("abc@xyz.com", mn1[0].getCusEmail());
-  //   assertEquals("abc@xyz.com", mn1[1].getCusEmail());
-  //   assertEquals("6207701328", mn1[0].getCusMobile());
-  //   assertEquals("6207701328", mn1[1].getCusMobile());
-  //   assertEquals(odt, mn1[0].getCusDob());
-  //   assertEquals(odt, mn1[1].getCusDob());
-  //   assertEquals("Chennai", mn1[0].getCusAddress());
-  //   assertEquals("Chennai", mn1[1].getCusAddress());
-  // }
 }
+
 

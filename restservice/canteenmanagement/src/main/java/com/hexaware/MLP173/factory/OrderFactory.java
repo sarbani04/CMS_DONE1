@@ -4,6 +4,8 @@ import com.hexaware.MLP173.persistence.OrderDAO;
 import com.hexaware.MLP173.persistence.DbConnection;
 import java.util.List;
 import java.util.Date;
+
+import com.hexaware.MLP173.model.Customer;
 import com.hexaware.MLP173.model.Menu;
 import com.hexaware.MLP173.model.OrderDetail;
 import com.hexaware.MLP173.model.OrderStatus;
@@ -27,7 +29,15 @@ public class OrderFactory {
     DbConnection db = new DbConnection();
     return db.getConnect().onDemand(OrderDAO.class);
   }
-
+   /**
+   * Call the data base connection.
+   * @param menuId for accept menu Id
+   * @return the array of menu object.
+   */
+  public static Menu showMenuItem(final int menuId) {
+    Menu orderDetail = dao().findByMenuId(menuId);
+    return orderDetail;
+  }
   /**
    * Call the data base connection.
    * @return the array of menu object.
@@ -147,6 +157,7 @@ public class OrderFactory {
    */
   public static String placeOrder(final OrderDetail orderdetail) {
     Menu menu = dao().findByMenuId(orderdetail.getFoodId());
+    Customer customer = dao().findByCusId(orderdetail.getCusId());
     //System.out.println(orderdetail.getFoodId());
     // System.out.println(menu);
     Wallet wallet = dao().getWallentInfo(orderdetail.getWalType(), orderdetail.getCusId());
@@ -163,9 +174,29 @@ public class OrderFactory {
       return "Insufficient Funds...";
     }  else if (diffDays < 0)  {
       return "Order Cannot placed yesterday...";
+    }  else if (today.getMonth() == customer.getCusDob().getMonth()) {
+      System.out.println("Happy Birthday " +customer.getCusName() +" You are getting 10% Discount on your food,Have fun");
+      double discount = totalAmount - (totalAmount * 0.10);
+      double diff = walAmount - discount;
+      System.out.println("Price is  " + discount);
+      orderdetail.setOrdStatus(OrderStatus.PENDING);
+      orderdetail.setOrdAmount(totalAmount);
+      dao().placeOrder(orderdetail);
+      dao().updateBalance(diff, orderdetail.getWalType(), orderdetail.getCusId());
+      return "Order Placed Successfully...";
+    } else if (totalAmount >= 500) {
+      System.out.println("You are getting 5% discount");
+      double discount = totalAmount - (totalAmount * 0.05);
+      double diff = walAmount - discount;
+      System.out.println("Price is  " + discount);
+      orderdetail.setOrdStatus(OrderStatus.PENDING);
+      orderdetail.setOrdAmount(totalAmount);
+      dao().placeOrder(orderdetail);
+      dao().updateBalance(diff, orderdetail.getWalType(), orderdetail.getCusId());
+      return "Order Placed Successfully...";
     } else {
       double diff = walAmount - totalAmount;
-      System.out.println("Price is  " + totalAmount);
+      System.out.println("Price is  " + menu.getFoodPrice());
       orderdetail.setOrdStatus(OrderStatus.PENDING);
       orderdetail.setOrdAmount(totalAmount);
       dao().placeOrder(orderdetail);
