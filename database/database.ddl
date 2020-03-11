@@ -15,7 +15,10 @@ CUS_ID int references customer(id),
 FOOD_ID int references FOOD_ITEM(FOOD_ID),
 VEN_ID int references VENDOR(VEN_ID),
 Wal_Type varchar(20),
-ORD_COMMENTS VARCHAR(50)
+ORD_COMMENTS VARCHAR(50),
+MENU_ID1 int(10),
+MENU_ID2 int(10),
+MENU_ID3 int(10)
 );
 
 
@@ -54,5 +57,6 @@ CUS_PASSWORD varchar(30),
 CUS_EMAIL varchar(30),
 CUS_MOBILE varchar(11),
 CUS_DOB date,
-CUS_ADDRESS varchar(100)
+CUS_ADDRESS varchar(100),
+CUS_GENDER enum('FEMALE', 'MALE')
 );                      
